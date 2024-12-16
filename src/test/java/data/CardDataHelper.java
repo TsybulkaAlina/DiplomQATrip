@@ -66,7 +66,7 @@ public class CardDataHelper {
         return new CardInfo("12345678900qwe42", getValidMonth(), getValidYear(), getValidHolder(), getValidCodcvccvv());
     }
     public static CardInfo getCardNumberNull() {
-        return new CardInfo("0000000000000000", getValidMonth(), getValidYear(), getValidHolder(), getValidCodcvccvv());
+        return new CardInfo("12345678900qwe42", getValidMonth(), getValidYear(), getValidHolder(), getValidCodcvccvv());
     }
     public static CardInfo getCardNumberEmpty() {
         return new CardInfo("", getValidMonth(), getValidYear(), getValidHolder(), getValidCodcvccvv());
