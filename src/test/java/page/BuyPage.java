@@ -12,15 +12,13 @@ public class BuyPage {
     private final SelenideElement Paymentcard = $(byText("Оплата по карте"));
     private final SelenideElement Creditcard = $(byText("Кредит по данным карты"));
 
-    public HomePage BuyCard() {
+    public void BuyCard() {
         Buy.click();
         Paymentcard.shouldBe(visible);
-        return new HomePage();
     }
 
-    public HomePage BuyCreditCard() {
+    public void BuyCreditCard() {
         Buyaloan.click();
         Creditcard.shouldBe(visible);
-        return new HomePage();
     }
 }
